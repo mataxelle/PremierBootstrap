@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap End -->
+
+    <!-- GoogleFont-->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- GoogleFont-->
+
+    <title>Créez des animations CSS</title>
+</head>
+
+<body>
+
+    <div class="bg-warning">
+        <div class="container mb-4">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" style="font-family: 'Kaushan Script', cursive;" href="MadininaSchool.html">
+                        <img src="images/logo.png" width="50" height="50" alt="logo">Madinina School</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <!-- "active" indique l'élémént actuellement sélectionné dans la barre-->
+                                <a class="nav-link" href="MadininaSchool.html">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cours.html">COURS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aPropos.html">A PROPOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section alert info -->
+    <div class="container mb-4">
+        <div class="row mb-4">
+            <div class="col">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h5 class="alert-heading">Prérequis</h5>
+                    <p>Bases en CSS. Si vous ne les maîtrisez pas, suivez le cours :
+                        <a href="#" class="alert-link">Apprenez à créer votre site avec
+                            HTML5 et CSS3</a>!</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col">
+                <h1>Créez des animations CSS</h1>
+            </div>
+        </div>
+
+        <!-- Englober la vidéo-->
+        <div class="row">
+            <div class="col mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- 16/9 est le format le plus utilisé-->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lOox4UJVFb4"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col">
+                <h2>A la fin de ce cours, vous serez capable de :</h2>
+                <ul>
+                    <li>réaliser vos premières animations CSS;</li>
+                    <li>maîtriser les transitions, les rotations et l'opacité;</li>
+                    <li>réaliser des animations dynamiques.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h3>Notes</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="timeInput">Temps :</label>
+                        <input type="text" class="form-control" placeholder=”mm:ss” name="Heure" id="Heure" aria-describedby="timeHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="note">Note :</label>
+                        <textarea name="node" id="note" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <div class="form-groupe">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">Rendre cette notation publique</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">Madinina School</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Entreprise</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Conditions d'utilisations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour assurer que tous fonctionne comme prévu : jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

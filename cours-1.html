@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
+    <!-- CDN Bootstrap remplacé au final par le fichier style.css
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Bootstrap End -->
+    End -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- GoogleFont-->
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
     <div class="bg-warning">
         <div class="container mb-4">
             <div class="row">
-                <nav class="col navbar navbar-expand-lg navbar-light">
+                <nav class="col navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" style="font-family: 'Kaushan Script', cursive;" href="MadininaSchool.html">
                         <img src="images/logo.png" width="50" height="50" alt="logo">Madinina School</a>
 
@@ -56,7 +57,7 @@
     <div class="container mb-4">
         <div class="row mb-4">
             <div class="col">
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
                     <h5 class="alert-heading">Prérequis</h5>
                     <p>Bases en CSS. Si vous ne les maîtrisez pas, suivez le cours :
                         <a href="#" class="alert-link">Apprenez à créer votre site avec
@@ -85,7 +86,7 @@
             </div>
         </div>
 
-        <div class="row mb-4">
+        <div class="row mb-4 mt-4">
             <div class="col">
                 <h2>A la fin de ce cours, vous serez capable de :</h2>
                 <ul>
@@ -101,28 +102,28 @@
                 <hr>
                 <h3>Notes</h3>
                 <form action="">
-                    <div class="form-group">
+                    <div class="form-group mt-4">
                         <label for="timeInput">Temps :</label>
                         <input type="text" class="form-control" placeholder=”mm:ss” name="Heure" id="Heure" aria-describedby="timeHelp">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-4">
                         <label for="note">Note :</label>
                         <textarea name="node" id="note" class="form-control" rows="5" required></textarea>
                     </div>
-                    <div class="form-groupe">
+                    <div class="form-groupe mt-4">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck">
                             <label class="form-check-label" for="gridCheck">Rendre cette notation publique</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary border-light shadow mt-4">Envoyer</button>
                 </form>
             </div>
         </div>
     </div>
 
     <div class="bg-warning">
-        <div class="container">
+        <div class="container pt-4">
             <div class="row">
                 <div class="col">
                     <ul class="list-inline text-center">
